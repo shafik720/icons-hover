@@ -52,6 +52,12 @@ body{
     transform: translateX(-400px);
     transition: 0.6s; 
 }
+.container .icon .icons #twitter{
+    transition: 0.5s;
+}
+.container .icon .icons #insta{ 
+    transition: 0.5s;
+}
 /* facebook hover  start*/
 .container .icon .icons #facebook:hover ~ .background{ 
     transform: translateX(50px);
@@ -60,15 +66,10 @@ body{
 .container .icon .icons #facebook:hover{
     color: white;
 }
-.container .icon .icons #facebook:hover ~ #twitter{
-    transform: translateY(-70px);
-    transition: 0.5s;
-}
-.container .icon .icons #facebook:hover ~ #insta{
-    transform: translateY(-70px);
-    transition: 0.5s;
-}
+
+
 /* facebook hover ends*/
+
 
 /* Twitter hover  start*/
 .container .icon .icons #twitter:hover ~ .background{
@@ -78,7 +79,18 @@ body{
 .container .icon .icons #twitter:hover{
     color: white;
 }
+
 /* Twitter hover end*/
+
+.container .icon .icons #insta:hover ~ .background{
+    transform: translateX(50px);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+}
+.container .icon .icons #insta:hover{
+    color: white; 
+}
+
 
 
 
