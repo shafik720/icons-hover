@@ -57,6 +57,9 @@ body{
     transform: translateX(50px);
     background:#103F91 ;
 }
+.container .icon .icons #facebook:hover{
+    color: white;
+}
 .container .icon .icons #facebook:hover ~ #twitter{
     transform: translateY(-70px);
     transition: 0.5s;
@@ -79,9 +82,7 @@ body{
 
 
 
-.container .icon .icons #facebook:hover{
-    color: white;
-}
+
 /* .container .icon .icons a:hover {
     color: white; 
 } */
