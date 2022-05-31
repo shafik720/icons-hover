@@ -47,17 +47,38 @@ body{
 .container .icon .icons .background{
     width: 400px;
     height: 100px;
-    background: red;
+    background: transparent;
     position: absolute;
     transform: translateX(-400px);
-    transition: 1s; 
+    transition: 0.6s; 
 }
-.container .icon .icons #facebook:hover ~ .background,.container .icon .icons #twitter:hover ~ .background,.container .icon .icons #insta:hover ~ .background{ 
+/* facebook hover  start*/
+.container .icon .icons #facebook:hover ~ .background{ 
     transform: translateX(50px);
+    background:#103F91 ;
 }
-.container .icon .icons #facebook{
-    padding: 2px 10px;
+.container .icon .icons #facebook:hover ~ #twitter{
+    transform: translateY(-70px);
+    transition: 0.5s;
 }
+.container .icon .icons #facebook:hover ~ #insta{
+    transform: translateY(-70px);
+    transition: 0.5s;
+}
+/* facebook hover ends*/
+
+/* Twitter hover  start*/
+.container .icon .icons #twitter:hover ~ .background{
+    transform: translateX(50px);
+    background:#22A5F1 ;
+}
+.container .icon .icons #twitter:hover{
+    color: white;
+}
+/* Twitter hover end*/
+
+
+
 .container .icon .icons #facebook:hover{
     color: white;
 }
