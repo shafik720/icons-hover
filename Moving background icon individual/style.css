@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .icon { 
+    position: relative;
+    border: 2px solid orange ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .icon .icons{
+    margin: 1px;  
+    position: relative;
+    width: 140px;
+    height: 120px;
+    border: 2px solid red;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container .icon .icons a{
+    border: 3px solid green;
+    font-size: 5em;
+    z-index: 10; 
+    display: block;  
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    transition-delay: 0.2s;   
+    padding: 10px ; 
+}
+
+.container .icon .icons .FacebookSpan2{
+    position: absolute; 
+    width: 100%; 
+    height: 100% ;
+    background: #103F91;
+    transform: translateY(130px); 
+    transition: 0.5s;
+}
+.container .icon .icons a:hover ~ .FacebookSpan2{  
+    transform: translateY(0px);  
+}
+.container .icon .icons a:hover{
+    color: white; 
+}
